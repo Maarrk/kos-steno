@@ -38,3 +38,7 @@ void matrix_init_kb(void) {
     steno_set_mode(STENO_MODE_GEMINI);
 }
 
+const uint16_t PROGMEM number_combo1[] = {STN_O, STN_E, COMBO_END};
+combo_t key_combos[COMBO_COUNT] = {
+    COMBO(number_combo1, STN_NC)
+};
